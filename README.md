@@ -32,6 +32,7 @@ Create ClientController and add POST method which is used to save client in data
 	"oib":"65547479545",
 	"city": "Osijek",
 	"street": "Vukovarska",
+	"number": 22
 	"zipCode": "31000",
 	"country": "Hrvatska",
 }
@@ -46,6 +47,7 @@ Create ClientController and add POST method which is used to save client in data
 	"oib":"65547479545",
 	"city": "Osijek",
 	"street": "Vukovarska",
+	"number": 22,
 	"zipCode": "31000",
 	"country": "Hrvatska",
 }
@@ -67,7 +69,7 @@ With API getAll fetch all clients stored in DB.
 		"oib":"65547479545",
 		"city": "Osijek",
 		"street": "Vukovarska",
-		"number": "8"
+		"number": 8,
 		"zipCode": "31000",
 		"country": "Hrvatska",
 	},
@@ -77,7 +79,7 @@ With API getAll fetch all clients stored in DB.
 		"oib":"91540145073",
 		"city": "Zagreb",
 		"street": "Vladimira Nazora",
-		"number": "55a"
+		"number": 55a,
 		"zipCode": "10000",
 		"country": "Hrvatska",
 	}
@@ -99,6 +101,7 @@ With API-a getById fetch client stored in DB. In controller you need to use Path
 	"oib":"65547479545",
 	"city": "Osijek",
 	"street": "Vukovarska",
+	"number": 22
 	"zipCode": "31000",
 	"country": "Hrvatska",
 }
