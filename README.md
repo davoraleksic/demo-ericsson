@@ -103,3 +103,44 @@ With API-a getById fetch client stored in DB. In controller you need to use Path
 	"country": "Hrvatska",
 }
 ```
+
+## User Story 5: Delete client by ID
+With this API (deleteById) you can delete client by ID.
+
+- Endpoint: /api/customers/delete/{id}
+- Method: DELETE
+- Request Body: none
+- Response Body: 200 OK (Use ResponseEntity in your controller to return OK status)
+
+## User Story 6: Update client by ID
+
+With this API you need to update existing client. Firstly get client by id and that client you need to update with new data from request body. This time in controller you need to pass @PathVariable and @RequestBody
+
+- Endpoint: /api/customers/{id}
+- Method: PUT
+- Request Body:
+
+ ```json
+ {
+	"firstName": "Ivan",
+	"lastName": "Peric",
+	"oib":"65547479545",
+	"city": "Osijek",
+	"street": "Vukovarska",
+	"number": 11,
+	"zipCode": "31000",
+	"country": "Hrvatska",
+}
+```
+```json
+{
+   "firstName": "Ivan",
+   "lastName": "Peric",
+   "oib":"65547479545",
+   "city": "Osijek",
+   "street": "Vukovarska",
+   "number": 11,
+   "zipCode": "31000",
+   "country": "Hrvatska",
+}
+```
