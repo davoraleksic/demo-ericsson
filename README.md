@@ -135,6 +135,7 @@ With this API you need to update existing client. Firstly get client by id and t
 	"country": "Hrvatska",
 }
 ```
+- Response Body:
 ```json
 {
    "firstName": "Ivan",
