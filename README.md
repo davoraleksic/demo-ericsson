@@ -56,7 +56,7 @@ With API getAll fetch all clients stored in DB.
 
 - Endpoint: /api/customers
 - Method: GET
-- Request Body example: nema
+- Request Body example: none
 - Response Body example: 
 
 ``` json 
@@ -89,7 +89,7 @@ With API-a getById fetch client stored in DB. In controller you need to use Path
 
 - Endpoint: /api/customers/{id}
 - Method: GET
-- Request Body example: nema
+- Request Body example: none
 - Response Body example:
 
 ``` json 
