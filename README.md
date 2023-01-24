@@ -148,3 +148,12 @@ With this API you need to update existing client. Firstly get client by id and t
    "country": "Hrvatska",
 }
 ```
+## User Story 7: ClientDtoMapper
+Implement ClientDtoMapper class. In this class you must have all the mappings from dto to entity and vice versa that you have done so far. Load this class using dependency injection into the service layer and replace all mappings that are in the service layer. 
+
+You can see example in: https://git.devops.cc.lab.etk.extern.eu.ericsson.se/CEZIH/eKarton (check DtoMapper.class)
+
+## User Story 8: Swagger
+Add swagger in your application and use swagger instead Postman.
+
+You can see example in: https://git.devops.cc.lab.etk.extern.eu.ericsson.se/CEZIH/eVacHelp (check pom.xml, SwaggerConfiguration, application.yml)
