@@ -154,6 +154,6 @@ Implement ClientDtoMapper class. In this class you must have all the mappings fr
 You can see example in: https://git.devops.cc.lab.etk.extern.eu.ericsson.se/CEZIH/eKarton (check DtoMapper.class)
 
 ## User Story 8: Swagger
-Add swagger in your application and use swagger instead Postman.
+Add swagger in your application and use Swagger instead Postman.
 
 You can see example in: https://git.devops.cc.lab.etk.extern.eu.ericsson.se/CEZIH/eVacHelp (check pom.xml, SwaggerConfiguration, application.yml)
