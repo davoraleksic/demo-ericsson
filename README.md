@@ -157,3 +157,23 @@ You can see example in: https://git.devops.cc.lab.etk.extern.eu.ericsson.se/CEZI
 Add swagger in your application and use Swagger instead Postman.
 
 You can see example in: https://git.devops.cc.lab.etk.extern.eu.ericsson.se/CEZIH/eVacHelp (check pom.xml, SwaggerConfiguration, application.yml)
+
+## User Story 9: Modification of getAll() method in Client
+- Now this method need to fetch clients by first name and/or last name. Both params are not required. 
+- Method must return all clients ASC sorted by last name
+- See example in: https://git.devops.cc.lab.etk.extern.eu.ericsson.se/CEZIH/org-select-cezih-ui-backend/src/branch/develop
+
+## User Story 10: New Entity -> Car
+Client can have more than one car and one car can be own by one client. 
+
+- Create new entity, controller, service and repository
+- Update Client entity with list of cars, add jpa mapping
+- Car has this attributes:
+	- id
+	- Client id
+	- Car type (this must be ENUM, example: OPEL_ASTRA)
+	- Year of manufacture
+	- Registration mark
+	- Color
+
+NOTE: Relation of Client and Car must be BIDIRECTIONAL (Client has list of cars and Car has reference on Client)
