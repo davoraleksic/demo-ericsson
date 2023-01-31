@@ -177,3 +177,42 @@ Client can have more than one car and one car can be own by one client.
 	- Color
 
 NOTE: Relation of Client and Car must be BIDIRECTIONAL (Client has list of cars and Car has reference on Client)
+
+## User Story 11: Create new Car
+Create save method which is used to save client in database and then response with client and his cars.
+
+- Endpoint: /api/customers/{id}/cars NOTE: id is client.id
+- Method: POST
+- Request Body example:
+
+ ```json
+ {
+	"carType", "TOYOTA_AURIS"
+	"manufactureYear": 2010,
+	"registrationMark":"OS555CC",
+	"color": "red"
+}
+```
+ 
+- Response Body example:
+
+``` json 
+{
+	"firstName": "Ivan",
+	"lastName": "Peric",
+	"oib":"65547479545",
+	"city": "Osijek",
+	"street": "Vukovarska",
+	"number": "22",
+	"zipCode": "31000",
+	"country": "Hrvatska",
+	"cars": [
+	    {
+	       "carType", "TOYOTA_AURIS"
+	       "manufactureYear": 2010,
+	       "registrationMark":"OS555CC",
+	       "color": "red"
+	    }	
+	]
+}
+```
