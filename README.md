@@ -216,3 +216,36 @@ Create save method which is used to save client in database and then response wi
 	]
 }
 ```
+## UserStory 12: Delete Car by ID
+Implement deleteById
+
+- Endpoint: /api/customers/{id}/cars/{id} NOTE: first id is client.id, second id is car.id
+- Method: DELETE
+- Request Body: none
+- Response Body: 200 OK (Use ResponseEntity in your controller to return OK status)
+
+## UserStory 13: Update Car by ID
+Implement updateById
+
+- Endpoint: /api/customers/{id}/cars/{id} NOTE: first id is client.id, second id is car.id
+- Method: PUT
+- Request Body: 
+
+ ```json
+ {
+	"carType", "TOYOTA_AURIS"
+	"manufactureYear": 2010,
+	"registrationMark":"OS555CC",
+	"color": "red"
+}
+```
+
+- Response Body:
+ ```json
+ {
+	"carType", "TOYOTA_AURIS"
+	"manufactureYear": 2010,
+	"registrationMark":"OS555CC",
+	"color": "red"
+}
+```
