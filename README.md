@@ -1,5 +1,5 @@
 # Car Service Application
-Technologies: Spring Boot, PostgreSql baza, REST architectural style
+Technologies: Spring Boot, PostgreSql database, REST architectural style
 
 ## User Story 1: Init project
 
