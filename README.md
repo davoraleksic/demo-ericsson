@@ -295,3 +295,133 @@ Car updateById
 	
 	- check if client exists, if not throw EntityNotFoundException
 	- check if car exists, if not throw EntityNotFoundException
+
+## User Story 16: New Entity -> CarService
+Car can have more than one CarServices and one CarService can be in one Car
+
+- Create new entity
+- Update Car entity with list of CarServices
+- CarServices has attributes:
+	- id
+	- carId
+	- dateOfService (Date)
+	- workerFirstName
+	- workerLastName
+	- workDescription
+	- price
+	- isPaid
+NOTE: BIDIRECTIONAL relation
+
+## User Story 17: Create new CarService
+Save CarService in DB
+
+- Endpoint: /api/customers/{clientId}/cars/{carId}/car-services
+- Method: POST
+- Request Body:
+
+ ```json
+ {
+	"dateOfService": 2023-02-23T18:25:43.511Z
+	"workerFirstName": "Ivo",
+	"workerLastName":"Ivic",
+	"workDescription": "Zamjena ulja",
+	"price": 99.99
+	"isPaid": false
+}
+```
+
+``` json 
+{
+	"firstName": "Ivan",
+	"lastName": "Peric",
+	"oib":"65547479545",
+	"city": "Osijek",
+	"street": "Vukovarska",
+	"number": "22",
+	"zipCode": "31000",
+	"country": "Hrvatska",
+	"cars": [
+	    {
+	       "carType", "TOYOTA_AURIS"
+	       "manufactureYear": 2010,
+	       "registrationMark":"OS555CC",
+	       "color": "red",
+	       "carServices": [
+		    {
+		        "dateOfService": 2023-02-23T18:25:43.511Z
+			"workerFirstName": "Ivo",
+			"workerLastName":"Ivic",
+			"workDescription": "Zamjena ulja",
+			"price": 99.99
+			"isPaid": false
+		    }	
+		]
+	    }	
+	]
+}
+```
+
+## User Story 17: Delete CarService by ID
+
+- Endpoint: /api/customers/{clientId}/cars/{carId}/car-services/{carServiceId}
+- Method: DELETE
+- Request Body: none
+- Response Body: 200 OK (Use ResponseEntity in your controller to return OK status)
+- Validations: return EntityNotFoundException if car service is not found
+
+## User Story 18: Update CarService by ID
+
+- Endpoint: /api/customers/{clientId}/cars/{carId}/car-services/{carServiceId}
+- Method: PUT
+- Request Body:
+
+```json
+ {
+	"dateOfService": 2023-02-23T18:25:43.511Z
+	"workerFirstName": "Ivo",
+	"workerLastName":"Ivic",
+	"workDescription": "Zamjena ulja i promjena guma",
+	"price": 110.00
+	"isPaid": false
+}
+```
+- Response Body
+```json
+{
+	"dateOfService": 2023-02-23T18:25:43.511Z
+	"workerFirstName": "Ivo",
+	"workerLastName":"Ivic",
+	"workDescription": "Zamjena ulja i promjena guma",
+	"price": 110.00
+	"isPaid": false
+}
+```
+
+## User Story 19: Update isPaid
+Update just isPaid attribute in CarService
+
+- Endpoint: /api/customers/{clientId}/cars/{carId}/car-services/{carServiceId}
+- Method: PUT
+- Request Body:
+
+```json
+{
+	"isPaid": true
+}
+```
+
+- Response Body:
+```json
+{
+	"message": "Success"
+}
+```
+
+## User Story 20: Mail Sending
+Send mail to client when car service is saved or updated. Modify client entity with new attribute: email (don't forget validations)
+
+## User Story 21: Unit Testing
+TODO: description
+
+## User Story 22: Mapstruct
+TODO: description
