@@ -310,6 +310,8 @@ Car can have more than one CarServices and one CarService can be in one Car
 	- workDescription
 	- price
 	- isPaid
+
+
 NOTE: BIDIRECTIONAL relation
 
 ## User Story 17: Create new CarService
