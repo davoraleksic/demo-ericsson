@@ -283,7 +283,7 @@ Car save:
 	- car type must not be null
 	- manufacture year must not be null
 	- registration mark must not be blank
-	- registration mark must be in AA 000 AA (2 character string -> 1 space -> 3 to 5 digit number -> 1 space -> 2 character string)
+	- registration mark must be in format AA 000 AA (2 character string -> 1 space -> 3 to 5 digit number -> 1 space -> 2 character string)
 	- color must not be blank
 
 Car deleteById:
