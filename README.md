@@ -249,3 +249,49 @@ Implement updateById
 	"color": "red"
 }
 ```
+
+## User Story 14: Implement error handling
+Example: https://github.com/davoraleksic/error-handling-demo
+
+## User Story 15: Validations
+Client save:
+
+	- first Name must not be blank
+	- last name must not be blank
+	- oib must not be blank
+	- check oib format
+	- check oib lenght (must contain 11 characters)
+	- check if oib is not number
+
+For these validations you must throw GenericValidationException with error message and date
+	
+Client getById:
+
+	- throw EntityNotFoundException if client is not found
+	
+Client deleteById:
+
+	- throw EntityNotFoundException if client is not found
+	
+Client updateById:
+
+	- throw EntityNotFoundException if client is not found
+	
+Car save:
+
+	- check if client exists, if not throw EntityNotFoundException
+	- car type must not be null
+	- manufacture year must not be null
+	- registration mark must not be blank
+	- registration mark must be in AA 000 AA (2 character string -> 1 space -> 3 to 5 digit number -> 1 space -> 2 character string)
+	- color must not be blank
+
+Car deleteById:
+
+	- check if client exists, if not throw EntityNotFoundException
+	- check if car exists, if not throw EntityNotFoundException
+	
+Car updateById
+	
+	- check if client exists, if not throw EntityNotFoundException
+	- check if car exists, if not throw EntityNotFoundException
