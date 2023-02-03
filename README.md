@@ -363,7 +363,7 @@ Save CarService in DB
 }
 ```
 
-## User Story 17: Delete CarService by ID
+## User Story 18: Delete CarService by ID
 
 - Endpoint: /api/customers/{clientId}/cars/{carId}/car-services/{carServiceId}
 - Method: DELETE
@@ -371,7 +371,7 @@ Save CarService in DB
 - Response Body: 200 OK (Use ResponseEntity in your controller to return OK status)
 - Validations: return EntityNotFoundException if car service is not found
 
-## User Story 18: Update CarService by ID
+## User Story 19: Update CarService by ID
 
 - Endpoint: /api/customers/{clientId}/cars/{carId}/car-services/{carServiceId}
 - Method: PUT
@@ -399,7 +399,7 @@ Save CarService in DB
 }
 ```
 
-## User Story 19: Update isPaid
+## User Story 20: Update isPaid
 Update just isPaid attribute in CarService
 
 - Endpoint: /api/customers/{clientId}/cars/{carId}/car-services/{carServiceId}
@@ -419,11 +419,11 @@ Update just isPaid attribute in CarService
 }
 ```
 
-## User Story 20: Mail Sending
+## User Story 21: Mail Sending
 Send mail to client when car service is saved or updated. Modify client entity with new attribute: email (don't forget validations)
 
-## User Story 21: Unit Testing
+## User Story 22: Unit Testing
 TODO: description
 
-## User Story 22: Mapstruct
+## User Story 23: Mapstruct
 TODO: description
