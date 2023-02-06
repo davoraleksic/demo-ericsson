@@ -402,7 +402,7 @@ Save CarService in DB
 ## User Story 20: Update isPaid
 Update just isPaid attribute in CarService
 
-- Endpoint: /api/customers/{clientId}/cars/{carId}/car-services/{carServiceId}
+- Endpoint: /api/customers/{clientId}/cars/{carId}/car-services/{carServiceId}/is-paid
 - Method: PUT
 - Request Body:
 
